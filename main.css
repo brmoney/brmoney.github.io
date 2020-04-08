@@ -1,0 +1,145 @@
+:root {
+    --yellow: #ffc92f;
+    --red: #d82727;
+    --black: #1b1b1b;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container__third {
+    margin: 0 auto;
+    width: 100%;
+    height: 70%;
+}
+
+.photo {
+    max-height: 300px;
+    min-height: 50px;
+    height: 50vh;
+    width: auto;
+}
+
+body {
+    font: 16px / 1.42 Arial, sans-serif;
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.first {
+    height: 10vh;
+    min-height: 100px;
+    background: url('./img/background.jpg') center center / cover no-repeat;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.second {
+    height: 10vh;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.third {
+    margin-bottom: 10px;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.mail {
+    text-decoration: none;
+    text-align: center;
+    color:inherit;
+}
+
+.mail__title {
+    margin-bottom: 3px;
+}
+
+.mail__content {
+    background: var(--black);
+    color: var(--yellow);
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.menu__item {
+    margin-right: 5px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    padding: 3px 3px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: var(--red);
+}
+
+.menu__item--active .menu__link {
+    color: var(--yellow);
+    background: var(--black);
+}
+
+.days__item {
+    position: absolute;
+    display: inline-block;
+    visibility: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+
+.days__item--active {
+    visibility: visible;
+}
+
+.text {
+    display: block;
+    position: center;
+}
+
